@@ -1,0 +1,7 @@
+*
+!.gitignore
+!DiceBot.py
+!diceFormulaParser.py
+!doc.txt
+!README.md
+!requirements.txt

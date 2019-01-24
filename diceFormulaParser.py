@@ -48,7 +48,7 @@ def get_dice_formula_result(formula_string, seed = None):
 	_seed_rng(datetime.now() if not seed else seed)
 	parsed = _parse_dice_formula(formula_string)
 	result = _resolve_expression(parsed)
-	print('Result was: {}'.format(result))
+	# print('Result was: {}'.format(result))
 	return result
 
 # DICE FORMULA FUNCTIONS

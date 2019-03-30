@@ -6,7 +6,7 @@ DiceBot is a Discord bot for tabletop gaming written in Python
   - Supports fudge dice with `ndf`
 
 # Usage
-You can roll dice using formulas.
+You can roll dice using formulas. You may use the `/roll` command or simply `/` to roll
 Examples:
 `/roll 1d20`
 ```markdown
@@ -49,7 +49,7 @@ Result: 15
 
 # Possible Features
   - Greater control from users with `GameMaster` role
-  - Import and persist character json from Mythweavers character sheets for rolls like `/roll gandalf attack staff` 
+  - Import and persist character json from Mythweavers character sheets for rolls like `/roll gandalf attack staff`
   - Suggest other features by creating an [issue](https://github.com/TravisAGengler/DiceBot/issues) and giving it the label `enhancement`
 
 # config.json

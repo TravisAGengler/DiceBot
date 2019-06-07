@@ -46,6 +46,7 @@ Result: 15
   - Flip a coin
   - Percent chance without dice
   - Rock Paper Scissors
+  - Fantasy Flight Dice
 
 # Possible Features
   - Greater control from users with `GameMaster` role

@@ -4,6 +4,7 @@ DiceBot is a Discord bot for tabletop gaming written in Python
 # Features
   - Roll dice using formulas
   - Supports fudge dice with `ndf`
+  - Supports exploding dice with a target value (For shadowrun-likes) with `{x}d{y}t{z}`
 
 # Usage
 You can roll dice using formulas. You may use the `/roll` command or simply `/` to roll
@@ -42,6 +43,13 @@ Examples:
 ```markdown
 Result: 15
 ```
+You can do exploding dice too
+Examples:
+`/roll 3d6t3`
+```markdown
+Result: 9, Individual Rolls: [4,4,1], Successes: 2
+```
+
 # Planned Features
   - Flip a coin
   - Percent chance without dice

@@ -22,10 +22,14 @@ def read_config(path):
 
 def format_roll(result, requester):
 	individual = ', '.join(result['individual'])
-	return 'Result: {}, Individual Rolls: {}'.format(result['total'], individual)
+	if 'successes' in result:
+		return 'Result: {}, Individual Rolls: {}, Successes: {}'.format(result['total'], individual, result['successes'])
+	else:
+		return 'Result: {}, Individual Rolls: {}'.format(result['total'], individual)
 
 # COMMAND HANDLERS
 async def on_roll(command_body, channel, requester):
+	print('COMMAND BODY {}'.format(command_body))
 	result = dice.get_dice_formula_result(command_body)
 	message = format_roll(result, requester)
 	await send_response(message, channel, requester)
